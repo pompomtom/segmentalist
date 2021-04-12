@@ -1,0 +1,1 @@
+{"cname": "camp1", "ctype": "2", "comCat": ["2"], "createdOn": "2021-04-12", "segments": [[["segmentName", "seg1"], ["segmentChannel", "2"], ["allowPool", "1"], ["denyPool", "7"], ["restrictions", []]], [["segmentName", "seg2"], ["segmentChannel", "1"], ["allowPool", "6"], ["denyPool", "7"], ["restrictions", []]]]}

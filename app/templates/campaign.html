@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}
+Campaign Attributes
+{% endblock %}
+{% block content %}
+    <form action="" method="post">
+        <table style="width:100%">
+            <tr align="left" >
+                <th>Campaign Name</th>
+                <th>Campaign Type</th>
+                <th>Communication Category</th>
+            </tr>
+            <tr valign="top">
+                <td> {{ form.campaignName(size=30) }} </td>
+                <td> {{ form.campaignType(size=30) }} </td>
+                <td> {{ form.comCatPreference(size=24) }} </td>
+            </tr>
+        </table>
+       <center>   {{ form.submit(size=8) }} </center>
+    </form>
+{% endblock %}
+

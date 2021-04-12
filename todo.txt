@@ -1,0 +1,31 @@
+Can I store the campaign as an object while adding segments, or do I need a db?
+(local file?)
+
+
+
+pandas and list gen, based on segment json.
+
+
+(1)Campaign->(n)Segments->(n)conditions
+
+campaign attributes:
+name
+creationdate
+segments (list or json or something)
+
+Segment attributes:
+index
+name
+allow pool
+deny pool   (irrelevant if allow pool is set!!)
+conditions
+
+Condition attributes
+index
+segment_index
+field (friendlyname for something from segments table. eg "cash in last 6 months")
+condition (eg "less than", "greater than")
+
+
+
+

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!-- FORM GOES HERE -->
+    <form action="" method="post">
+        <table style="width:100%">
+            <tr align="left">
+                <th>Field Name</th>
+                <th>Comparator</th>
+                <th>Value</th>
+            </tr>
+            <tr valign="top">
+                <td> {{ form.conditionName(size=30) }} </td>
+                <td> {{ form.segmentChannel(size=30) }} </td>
+                <td> {{ form.allowPool(size=12) }} </td>
+                <td> {{ form.denyPool(size=12) }} </td>
+            </tr>
+
+            {{ for
+            <tr>
+
+            </tr>
+        </table>
+    </form>
+
+
+{% endblock %}

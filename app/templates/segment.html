@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}
+ {{ campaignname }}
+{% endblock %}
+{% block content %}
+<center>
+    <h2>
+        {{ campaignname }}
+        <br><br><br>
+        Segment:
+        {{ segmentcount }}
+    </h2>
+</center>
+
+    <form action="" method="post">
+        <table style="width:100%">
+            <tr align="left" >
+                <th>Segment Name</th>
+                <th>Channel</th>
+                <th>Include SupporterPool</th>
+                <th>Exclude SupporterPool</th>
+            </tr>
+            <tr valign="top">
+                <td> {{ form.segmentName(size=30) }} </td>
+                <td> {{ form.segmentChannel(size=30) }} </td>
+                <td> {{ form.allowPool(size=12) }} </td>
+                <td> {{ form.denyPool(size=12) }} </td>
+            </tr>
+        </table>
+       <center>   {{ form.submit(size=8) }} </center>
+    </form>
+{% endblock %}

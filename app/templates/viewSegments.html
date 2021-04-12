@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<table width="100%">
+    <th>Segment Number</th>
+    <th>Segment Name</th>
+    <th>Segment Thing</th>
+    <th>Segment Other Thing</th>
+    <th>Segment Next Thing</th>
+    {% for segindex, segname, segthing, segother, segnext in segnames %}
+    <tr>
+        <td>
+            {{ segindex }}
+        </td>
+        <td>
+            {{ segname }}
+        </td>
+        <td>
+            {{ segthing }}
+        </td>
+        <td>
+            {{ segother }}
+        </td>
+        <td>
+            {{ segnext }}
+        </td>
+    </tr>
+    {%endfor%}
+</table>
+
+
+{% endblock %}
